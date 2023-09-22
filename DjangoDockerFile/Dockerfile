@@ -16,4 +16,4 @@ COPY ../* /usr/src/app
 EXPOSE 80
 
 RUN chmod +x /usr/src/app/django-docker-entrypoint.sh
-ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
+ENTRYPOINT ["/usr/src/app/django-docker-entrypoint.sh"]
