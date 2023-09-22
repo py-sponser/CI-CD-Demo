@@ -22,7 +22,10 @@ spec:
                 - containerPort: 80
               env:
                 - name: DB_NAME
-                  value: "todotasks"
+                  valueFrom:
+                    configMapKeyRef:
+                      name: dj-config-map
+                      key: psql-db-name
 
                 - name: DB_USERNAME
                   valueFrom:

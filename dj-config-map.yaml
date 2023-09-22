@@ -4,3 +4,4 @@ metadata:
   name: dj-config-map
 data:
   psql-url: psql-svc
+  psql-db-name: "todotasks"
