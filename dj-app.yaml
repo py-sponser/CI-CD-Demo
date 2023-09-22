@@ -29,7 +29,7 @@ spec:
             app: todo
         spec:
           containers:
-            - image: app-image
+            - image: djangotodo
               name: todo
               ports:
                 - containerPort: 80
