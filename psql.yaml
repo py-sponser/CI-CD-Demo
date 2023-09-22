@@ -15,7 +15,7 @@ spec:
             app: psql
         spec:
           containers:
-            - image: postgres
+            - image: postgres-image
               name: postgres-container
               ports:
                 - containerPort: 5432

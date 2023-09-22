@@ -29,6 +29,7 @@ spec:
                     secretKeyRef:
                       name: dj-secret
                       key: db-username
+
                 - name: DB_PASSWORD
                   valueFrom:
                     secretKeyRef:
