@@ -1,3 +1,4 @@
+ALTER USER postgres WITH PASSWORD 'postgres';
 CREATE DATABASE todotasks;
 ALTER ROLE postgres SET client_encoding TO 'utf8';
 ALTER ROLE postgres SET default_transaction_isolation TO 'read committed';
