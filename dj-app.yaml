@@ -29,7 +29,7 @@ spec:
             app: todo
         spec:
           containers:
-            - image: app-image
+            - image: sponser/app-image
               imagePullPolicy: Never
               name: todo
               ports:
