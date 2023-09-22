@@ -11,7 +11,7 @@ COPY ../requirements.txt /usr/src/app
 RUN pip install -r requirements.txt
 
 # copy project
-COPY ../ /usr/src/app
+COPY /home/sponser/CI-CD-Demo/ /usr/src/app
 
 EXPOSE 80
 
