@@ -5,6 +5,9 @@ WORKDIR /tmp/
 COPY psql-docker-entrypoint.sh .
 
 RUN chmod +x /tmp/psql-docker-entrypoint.sh
+
+USER postgres
+
 ENTRYPOINT ["/tmp/psql-docker-entrypoint.sh"]
 EXPOSE 5432
 
