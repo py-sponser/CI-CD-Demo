@@ -7,13 +7,13 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN pip install --upgrade pip
-COPY ./requirements.txt /usr/src/app
+COPY ../requirements.txt /usr/src/app
 RUN pip install -r requirements.txt
 
 # copy project
-COPY . /usr/src/app
+COPY ../ /usr/src/app
 
 EXPOSE 80
 
-RUN chmod +x /usr/src/app/docker-entrypoint.sh
-ENTRYPOINT [ "/usr/src/app/docker-entrypoint.sh"]
+RUN chmod +x /usr/src/app/django-docker-entrypoint.sh
+ENTRYPOINT ["/usr/src/app/docker-entrypoint.sh"]
