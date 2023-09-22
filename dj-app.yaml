@@ -29,7 +29,8 @@ spec:
             app: todo
         spec:
           containers:
-            - image: app-image:latest
+            - image: app-image
+              imagePullPolicy: IfNotPresent
               name: todo
               ports:
                 - containerPort: 80
