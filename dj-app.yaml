@@ -30,7 +30,6 @@ spec:
         spec:
           containers:
             - image: sponser/app-image
-              imagePullPolicy: Never
               name: todo
               ports:
                 - containerPort: 80
