@@ -37,7 +37,10 @@ spec:
                       key: db-password
 
                 - name: DB_HOST
-                  value: psql-service
+                  valueFrom:
+                    configMapKeyRef:
+                      name: dj-config-map
+                      key: psql-url
 ---
 apiVersion: v1
 kind: Service
