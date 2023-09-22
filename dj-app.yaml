@@ -30,6 +30,7 @@ spec:
         spec:
           containers:
             - image: djangotodo
+              imagePullPolicy: Never
               name: todo
               ports:
                 - containerPort: 80
