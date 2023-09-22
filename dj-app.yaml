@@ -29,7 +29,7 @@ spec:
             app: todo
         spec:
           containers:
-            - image: app-image
+            - image: app-image:latest
               name: todo
               ports:
                 - containerPort: 80
