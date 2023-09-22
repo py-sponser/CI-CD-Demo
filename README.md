@@ -1,8 +1,8 @@
 # CI-CD-Demo - Simple Todo App using Django
 
 Steps:
-- cd PsqlFiles/ && docker build -t psql-img
-- cd ../ && docker build -t dj-img
+- cd PsqlFiles/ && docker build -t psql-img .
+- cd ../ && docker build -t dj-img .
 - kubectl apply -f dj-svc.yaml
 - kubectl apply -f psql-svc.yaml
 - kubectl apply -f dj-config-map.yaml
