@@ -29,7 +29,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: psql-service
+  name: psql-svc
 spec:
   type: NodePort
   selector:
