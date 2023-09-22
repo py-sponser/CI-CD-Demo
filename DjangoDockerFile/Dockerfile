@@ -7,11 +7,11 @@ ENV PYTHONUNBUFFERED 1
 
 # install dependencies
 RUN pip install --upgrade pip
-COPY ../requirements.txt /usr/src/app
+COPY requirements.txt /usr/src/app
 RUN pip install -r requirements.txt
 
 # copy project
-COPY /home/sponser/CI-CD-Demo/ /usr/src/app
+COPY .. /usr/src/app
 
 EXPOSE 80
 
