@@ -15,7 +15,7 @@ spec:
             app: todo
         spec:
           containers:
-            - image: djangotodo
+            - image: dj-img
               imagePullPolicy: Never
               name: todo
               ports:

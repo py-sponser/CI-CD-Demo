@@ -15,7 +15,7 @@ spec:
             app: psql
         spec:
           containers:
-            - image: postgres-image
+            - image: psql-img
               imagePullPolicy: Never
               name: postgres-container
               ports:
