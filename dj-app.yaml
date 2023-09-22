@@ -49,4 +49,4 @@ spec:
                       key: db-password
 
                 - name: DB_HOST
-                  value: dj-service
+                  value: psql-service
