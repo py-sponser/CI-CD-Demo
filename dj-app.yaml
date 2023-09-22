@@ -30,7 +30,7 @@ spec:
         spec:
           containers:
             - image: app-image
-              imagePullPolicy: IfNotPresent
+              imagePullPolicy: Never
               name: todo
               ports:
                 - containerPort: 80
