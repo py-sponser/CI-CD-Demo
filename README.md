@@ -1,4 +1,4 @@
-# Simple Todo App
+# CI-CD-Demo - Simple Todo App using Django
 
 https://todo-app144.herokuapp.com/
 
