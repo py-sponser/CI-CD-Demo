@@ -1,18 +1,11 @@
 # CI-CD-Demo - Simple Todo App using Django
 
-https://todo-app144.herokuapp.com/
-
-- No Authentication
-
-What are used:
-- Django
-- Django REST API Framework
-- Bootstrap
-- Javascript
-
-Required packages to be installed are in requirements.txt:
-- pip install -r requirements.txt
-
-To run the app: 
-- python manage.py runserver
-# CI-CD-Demo
+Steps:
+- cd PsqlFiles/ && docker build -t psql-img
+- cd ../ && docker build -t dj-img
+- kubectl apply -f dj-svc.yaml
+- kubectl apply -f psql-svc.yaml
+- kubectl apply -f dj-config-map.yaml
+- kubectl apply -f dj-secrets.yaml
+- kubectl apply -f psql.yaml
+- kubectl apply -f dj-app.yaml
