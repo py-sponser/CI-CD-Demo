@@ -17,7 +17,7 @@ kind: Deployment
 metadata:
     labels:
         app: psql
-    name: my-todo-app
+    name: psql-dep
 spec:
     replicas: 1
     selector:

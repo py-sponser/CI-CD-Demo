@@ -17,7 +17,7 @@ kind: Deployment
 metadata:
     labels:
         app: todo
-    name: my-todo-app
+    name: dj-depl
 spec:
     replicas: 2
     selector:
