@@ -138,7 +138,7 @@
             var wrapper = document.getElementById("list-wrapper");
 
             
-            var url = "http://127.0.0.1:80/api/task_list/";
+            var url = "http://192.168.49.2:30333/api/task_list/";
             fetch(url)
             .then((response) => response.json())
             .then(function(data){
@@ -214,10 +214,10 @@
         form.addEventListener("submit",function(e){
             e.preventDefault();
             console.log("Form submitted, but no data sent.");
-            var url = "http://127.0.0.1:80/api/task_create/";
+            var url = "http://192.168.49.2:30333/api/task_create/";
 
             if(activeItem != null){
-                var url = `http://127.0.0.1:80/api/task_update/${activeItem.id}/`;
+                var url = `http://192.168.49.2:30333/api/task_update/${activeItem.id}/`;
                 activeItem = null;
             }
             var title = document.getElementById("title").value;
@@ -244,7 +244,7 @@
         
         function deleteItem(item){
             console.log("Delete Clicked")
-            var url = `http://127.0.0.1:80/api/task_delete/${item.id}/`;
+            var url = `http://192.168.49.2:30333/api/task_delete/${item.id}/`;
             fetch(url,{
                 method: "DELETE",
                 headers: {
@@ -260,7 +260,7 @@
         function strikeUnstrike(item){
             console.log("strike clicked");
             item.completed = !item.completed;
-            var url = `http://127.0.0.1:80/api/task_update/${item.id}/`;
+            var url = `http://192.168.49.2:30333/api/task_update/${item.id}/`;
             fetch(url,{
                 method: "POST",
                 headers: {
