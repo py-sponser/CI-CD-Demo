@@ -1,6 +1,7 @@
 # CI-CD-Demo - Simple Todo App using Django
 
 A simple Django PostgreSQL todo_tasks application project hosted using K8s minikube cluster.
+
 ---
 [+] Installation:
 - git clone https://github.com/py-sponser/CI-CD-Demo.git
