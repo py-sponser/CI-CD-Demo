@@ -11,5 +11,5 @@ There are also a script for deleting K8s components:
 - ./delete_components.sh
 - Note: you may find an error removing a docker image at the end, you need to remove it manually.
 
-Later on, Jenkins will be added to the process to complete CI/CD 
+Later on, Jenkins will be added to the handle the CI/CD process.
 
