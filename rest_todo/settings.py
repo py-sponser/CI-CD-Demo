@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'rest_todo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': f"{getenv('DB_NAME')}",
-        "USER": f"{getenv('DB_USERNAME')}",
-        "PASSWORD": f"{getenv('DB_PASSWORD')}",
-        "HOST": f"{getenv('DB_HOST')}",
+        'NAME': getenv("DB_NAME"),
+        "USER": getenv("DB_USERNAME"),
+        "PASSWORD": getenv("DB_PASSWORD"),
+        "HOST": getenv("DB_HOST"),
     }
 }
 
