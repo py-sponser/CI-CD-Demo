@@ -13,7 +13,7 @@ A simple Django PostgreSQL todo_tasks application project hosted using K8s minik
   - minikube start --driver docker
 - git clone https://github.com/py-sponser/CI-CD-Demo.git
 - cd CI-CD-Demo/
-- ./create_components.sh will do everything for you so to have the project running within your cluster ;)
+- ./create_components.sh script will do everything for you so to have the project running within your cluster ;)
 ---
 [+] There is also a script for deleting K8s components:
 - ./delete_components.sh
