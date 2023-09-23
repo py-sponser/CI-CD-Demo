@@ -1,3 +1,4 @@
+eval $(minikube docker-env)
 cd PsqlFiles/ && docker build -t psql-img .
 cd ../ && docker build -t dj-img .
 kubectl apply -f dj-svc.yaml
