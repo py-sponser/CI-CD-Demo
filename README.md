@@ -19,6 +19,5 @@ A simple Django PostgreSQL todo_tasks application project hosted using K8s minik
 - ./delete_components.sh
 - Note: you may find an error removing a docker image at the end, you need to remove it manually.
 ---
-[+] Later on, Jenkins will be added to handle the CI/CD process.<br>
-[+] Also, There'll be more mandatory addons such as using statefulsets, persistent volumes, ...
+[+] Later on, Jenkins will be added to handle the CI/CD process, also, there will be more mandatory addons such as using statefulsets, persistent volumes, ...
 
