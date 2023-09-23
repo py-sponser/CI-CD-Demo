@@ -1,12 +1,15 @@
 # CI-CD-Demo - Simple Todo App using Django
 
-Steps:
-- cd PsqlFiles/ && docker build -t psql-img .
-  - An init.sql file exist to execute SQL queries within psql to prepare user and database.
-- cd ../ && docker build -t dj-img .
-- kubectl apply -f dj-svc.yaml
-- kubectl apply -f psql-svc.yaml
-- kubectl apply -f dj-config-map.yaml
-- kubectl apply -f dj-secrets.yaml
-- kubectl apply -f psql.yaml
-- kubectl apply -f dj-app.yaml
+A simple Django PostgreSQL todo_tasks application project hosted using K8s minikube cluster
+
+[+] Installation:
+- git clone https://github.com/py-sponser/CI-CD-Demo.git
+- cd CI-CD-Demo/
+- ./create_components.sh will set up everything for you ;)
+
+There are also a script for deleting K8s components:
+- ./delete_components.sh
+- Note: you may find an error removing a docker image at the end, you need to remove it manually.
+
+Later on, Jenkins will be added to the process to complete CI/CD 
+
