@@ -6,13 +6,14 @@ A simple Django PostgreSQL todo_tasks application project hosted using K8s minik
 [+] Overview:
 - The django app depends on a docker image, the Dockerfile exists at project workdir.
 - Postgres database server depends on a docker image, the Dockerfile exists at PsqlFiles within the project workdir.
-- The cluster pulls the images locally.
+- The cluster pulls the docker images locally.
 ---
 [+] Installation:
-- Make sure you have "minikube", "kubectl" installed on your system.
+- Make sure you have "minikube", "kubectl" installed and started on your system.
+  - minikube start --driver docker
 - git clone https://github.com/py-sponser/CI-CD-Demo.git
 - cd CI-CD-Demo/
-- ./create_components.sh will set up the for you ;)
+- ./create_components.sh will create components for you ;)
 ---
 [+] There is also a script for deleting K8s components:
 - ./delete_components.sh
