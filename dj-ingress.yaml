@@ -1,0 +1,13 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dj-ingress
+spec:
+  rules:
+  - host: "todo.com"
+    http:
+    paths:
+    - path: /
+      backend:
+        serviceName: dj-svc
+        servicePort: 30333
