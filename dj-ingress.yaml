@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: dj-ingress
-
+  
 spec:
   rules:
   - host: "todo.com"
