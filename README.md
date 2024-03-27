@@ -10,7 +10,8 @@ A simple Django PostgreSQL todo_tasks application project hosted using K8s minik
 ---
 [+] Installation:
 - Make sure you have "minikube", "kubectl" installed and started on your system.
-  - minikube start --driver docker
+- sudo usermod -aG docker $USER && newgrp docker
+- minikube start --driver docker
 - git clone https://github.com/py-sponser/CI-CD-Demo.git
 - cd CI-CD-Demo/
 - ./create_components.sh will do everything for you so to have the project running within your cluster ;)

@@ -1,4 +1,5 @@
 django
 djangorestframework
+setuptools
 psycopg2
 django-environ
